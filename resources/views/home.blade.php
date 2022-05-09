@@ -18,8 +18,8 @@
                                     </div>
                               </div>
                         @endforeach
-                   </div>
+                  </div>
+                  {{ $comicsList->links() }}
             </div>
-         {{ $comicsList->links() }}
       </main>
 @endsection
