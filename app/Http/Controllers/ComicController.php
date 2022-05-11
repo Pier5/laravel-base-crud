@@ -37,7 +37,9 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        // dd($request);
+        $formData = $request->all();
+        Comic::create($formData);
     }
 
     /**
