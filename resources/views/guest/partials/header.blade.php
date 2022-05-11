@@ -9,13 +9,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">
+                    <li class="nav-item {{ Route::currentRouteName() == 'home' ? 'active-li' : '' }}">
                       <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
-                    <li class="nav-item {{ Route::currentRouteName() == 'comics.index' || Route::currentRouteName() == 'comics.show' ? 'active' : '' }}">
+                    <li class="nav-item {{ Route::currentRouteName() == 'comics.index' || Route::currentRouteName() == 'comics.show' ? 'active-li' : '' }}">
                       <a class="nav-link" href="{{ route('comics.index') }}">Comics</a>
                     </li>
-                    <li class="nav-item {{ Route::currentRouteName() == 'comics.create' ? 'active' : '' }}">
+                    <li class="nav-item {{ Route::currentRouteName() == 'comics.create' ? 'active-li' : '' }}">
                       <a class="nav-link" href="{{ route('comics.create') }}">Aggiungi un nuovo Comic</a>
                     </li>
                   </ul>

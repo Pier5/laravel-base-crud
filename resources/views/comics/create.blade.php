@@ -3,7 +3,7 @@
 @section('title', 'DC-Comic Add')
 
 @section('content')
-      <div class="container">
+      <div class="container mt-3">
         <div class="row">
             <div class="col">
                 <form method="POST" action="{{ route('comics.store') }}">
