@@ -7,9 +7,7 @@
             <div class="container mt-4">
                   <div class="row">
                         <div class="col">
-                              Controlla la lista dei fumetti disponibili:
-
-                              <a href="{{ route('comics.index') }}">DC-Comics Novel</a>
+                              <h1>Questa è la Home</h1>
                         </div>
                   </div>
             </div>
