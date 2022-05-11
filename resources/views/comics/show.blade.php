@@ -4,7 +4,7 @@
 
 @section('content')
       <main>
-        <div class="container">
+        <div class="container pb-4">
           <div class="row g-4 pt-4">
             <div class="col-8">
               <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
@@ -15,6 +15,7 @@
           </div>
           <button class="btn btn-primary"><a href="{{ route('home') }}"><span class="text-white">Home</span></a></button>
           <button class="btn btn-primary"><a href="{{ route('comics.index') }}"><span class="text-white">Lista Fumetti</span></a></button>
+          <button class="btn btn-primary"><a href="{{ route('comics.create') }}"><span class="text-white">Aggiungi Comic</span></a></button>
         </div>
       </main>
 @endsection
