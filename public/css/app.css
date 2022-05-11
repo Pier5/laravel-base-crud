@@ -12181,3 +12181,8 @@ a {
   text-decoration: none;
 }
 
+ul.pagination {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+

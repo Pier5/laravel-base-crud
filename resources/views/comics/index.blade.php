@@ -3,11 +3,11 @@
 @section('title', 'DC-Comics')
 
 @section('content')
-      <main>
+      <main class="bg-dark">
             <div class="container">
-                  <div class="row g-5 mt-4 mb-5">
+                  <div class="row g-5 mb-5">
                         @foreach($comicsList as $comic)
-                              <div class="col-4">
+                              <div class="col-4 pt-5">
                                     <div class="card h-100">
                                           <img class="img-fluid h-75" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
                                           <div class="card-body text-center">
