@@ -13,7 +13,8 @@
               <h4 class="pt-2 pb-3">Price: {{ $comic->price }}$</h4>
             </div>
           </div>
-          <a href="{{ url()->previous() }}"><button class="btn btn-primary">Home</button></a>
+          <button class="btn btn-primary"><a href="{{ route('home') }}"><span class="text-white">Home</span></a></button>
+          <button class="btn btn-primary"><a href="{{ route('comics.index') }}"><span class="text-white">Lista Fumetti</span></a></button>
         </div>
       </main>
 @endsection
