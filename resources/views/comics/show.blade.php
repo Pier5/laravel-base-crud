@@ -13,9 +13,9 @@
               <h4 class="pt-2 pb-3">Price: {{ $comic->price }}$</h4>
             </div>
           </div>
-          <button class="btn btn-primary"><a href="{{ route('home') }}"><span class="text-white">Home</span></a></button>
-          <button class="btn btn-primary"><a href="{{ route('comics.index') }}"><span class="text-white">Lista Fumetti</span></a></button>
-          <button class="btn btn-primary"><a href="{{ route('comics.create') }}"><span class="text-white">Aggiungi Comic</span></a></button>
+          <a class="btn btn-primary" href="{{ route('home') }}"><span class="text-white">Home</span></a>
+          <a class="btn btn-primary" href="{{ route('comics.index') }}"><span class="text-white">Lista Fumetti</span></a>
+          <a class="btn btn-primary" href="{{ route('comics.create') }}"><span class="text-white">Aggiungi Comic</span></a>
         </div>
       </main>
 @endsection

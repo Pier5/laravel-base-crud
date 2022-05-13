@@ -14,6 +14,11 @@
                                                 <h2 class="card-title pt-2"><a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a></h2>
                                                 <h3 class="card-text pt-2">{{ $comic->series }}</h3>
                                                 <h4 class="card-text text-uppercase pt-2">{{ $comic->type }}</h4>
+                                                <div class="col-5 py-2 d-flex">
+                                                      <a class="btn btn-primary nav-link" href="{{ route('comics.edit', $comic->id) }}"> 
+                                                            <span class="text-dark text-uppercase">Modifica un Comic</span>  
+                                                      </a>
+                                                </div>
                                           </div>
                                     </div>
                               </div>
