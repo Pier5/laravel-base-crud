@@ -77,7 +77,6 @@ class ComicController extends Controller
         $formData = $request->all();
         $comic->update($formData);
         return redirect()->route('comics.index', $comic->id);
-
     }
 
     /**
@@ -88,6 +87,8 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+
+        return redirect()->route('comics.index');
     }
 }
