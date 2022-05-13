@@ -22,7 +22,7 @@
                                                             @csrf
                                                             @method('DELETE')
                                                             <button class="btn btn-danger py-2">Elimina un Comic</button>
-                                                        </form>
+                                                      </form>
                                                 </div>
                                           </div>
                                     </div>

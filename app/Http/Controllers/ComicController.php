@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
+
+    protected $validationRules = [
+        "title"       => "required|unique:comics|max:100",
+        "description" => "required|",
+        "thumb"       => "required|url|max:250",
+        "price"       => "required|numeric",
+        "series"      => "required|max:250",
+        "sale_date"   => "required|date",
+        "type"        => "required|max:50"
+    ];
     /**
      * Display a listing of the resource.
      *
@@ -37,6 +47,9 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate($this->validationRules, [
+            'thumb.url' => 'l\'indirizzo url è sbagliato',
+        ]);
         // dd($request);
         $formData = $request->all();
         Comic::create($formData);
@@ -74,6 +87,7 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        $request->validate($this->validationRules);
         $formData = $request->all();
         $comic->update($formData);
         return redirect()->route('comics.index', $comic->id);
